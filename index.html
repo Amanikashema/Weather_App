@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<title>Weather App</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center title">Weather in</h1>
+        <form class="search-location">
+            <input type="text" placeholder="What city" autocomplete="off" name="city" class="form-control text-muted form-rounded p-4 shadow-sm">
+
+        </form>
+
+        <div class="card rounded d-none my-3 shadow-lg back-card">
+            <div class="card-top text-center">
+                <img src="img/night_image.svg" alt="Cloudy sun" class="card-img-top time">
+                <div class="city-name">
+                    <p>Durban
+                       <span>....</span>
+                    </p>
+                </div>
+            </div>
+           
+            <div class="card-body">
+              
+                <div class="card-mid row">
+                    <div class="col text-center temp">
+                        <span>30&deg;C</span>
+                    </div>
+                    <div class="col-4 condition-temp">
+                        <p class="condition">Thunder storm</p>
+                        <p class="high">30&deg;C</p>
+                        <p class="low">27&deg;C</p>
+                    </div>
+                </div>
+                <div class="icon-container card shadow mx-auto">
+                    <img src="img/cloud.svg"  alt="rain">
+                </div>
+
+                <div class="card-bottom px-5 py-4 row">
+                    <div class="col text-center">
+                        <p>30&deg;C</p>
+                        <span>Feels Like</span>
+                    </div>
+
+                    <div class="col text-center">
+                        <p>55%</p>
+                        <span>Humidity</span>
+                    </div>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+<script src="request.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
